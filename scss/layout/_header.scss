@@ -1,0 +1,162 @@
+.header {
+    width: 100%;
+    // height: calc(100vh - 30px);
+    height: 100vh;
+    background: url(../img/bg1.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-flow: wrap;
+    // @include dFlex(center, center, column wrap);
+
+    @include Tablet(){
+        height: calc(100vh + 50px);
+    }
+
+    .bg-color {
+        // height: calc(100% - 250px);
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        // height: calc(100vh - 100px);
+        background: linear-gradient(#A6574C, #E5C7A7, #E5C7A7);
+        // background: linear-gradient(180deg, #861D23 -62.79%, #E5C7A7 71.22%);
+        mix-blend-mode: multiply;
+        // @include dFlex(space-between, center, row wrap);
+
+        @include Tablet(){
+            height: calc(100vh + 50px);
+        }
+    }
+
+    .header-content {
+        @include dFlex(center, center, column nowrap);
+        padding: 20px 30px;
+        // max-width: 50%;
+        //  width: 60%;
+        z-index: 1;
+        // background: aquamarine;
+
+        h1 {
+            font-family: 'Abril Fatface';
+            font-size: 13vmin;
+            letter-spacing: 2px;
+            color: $white;
+            font-weight: 200;
+            
+            padding-top: 20px;
+            position: relative;
+
+            span {
+                position: absolute;
+                font-family: 'Yesteryear';
+                color: rgba($color: $color-primario, $alpha: 0.3);
+                font-size: 8vmin;
+                z-index: -1;
+                top: -15px;
+                left: 20px;
+                transform: rotate(-15deg) !important;
+
+                @include Phone(){
+                    top: 3px;
+                }
+
+
+            }
+
+            // span{
+            //     font-family: 'Abril Fatface';
+            // color: $white;
+            // font-size: 12vmin;
+            // letter-spacing: 2px;
+            // font-weight: 200;
+            // padding: 20px;
+            // }
+
+        }
+
+        // h1 {
+        //     font-family: 'Abril Fatface';
+        //     color: $white;
+        //     font-size: 16vmin;
+        //     letter-spacing: 2px;
+        //     font-weight: 200;
+        //     // padding: 20px;
+        // }
+
+
+
+        .chart-gradient {
+            margin: 0;
+            padding: 0;
+            // position: absolute;
+            /* background: linear-gradient(90deg,#ff0000 , #ffff00 , #ff00f3 , #0033ff, #ff00c4,  #ff0000); */
+            // background: linear-gradient(90deg, #861D23, #dca264, #e5c7a7, #861D23);
+            background: transparent;
+            background-size: 400%;
+            font-size: 15vmin;
+            letter-spacing: 3px;
+            word-spacing: 5px;
+            font-weight: 100;
+            text-align: center;
+            text-transform: uppercase;
+            // -webkit-text-stroke: 4px #fff;
+            //-webkit-text-fill-color: transparent;
+            //-webkit-background-clip: text;
+
+
+            animation: aniss 20s linear infinite;
+
+            @keyframes anis {
+                0% {
+                    background-position: 0%;
+                }
+
+                100% {
+                    background-position: 400%;
+                }
+            }
+
+
+        }
+
+        p {
+            font-family: 'Yesteryear';
+            font-size: 6vmin;
+            letter-spacing: 1px;
+            font-weight: 100;
+            color: $color-primario;
+            text-align: center;
+
+        }
+    }
+
+    .img-header {
+        // background: blue;
+        @include dFlex(center, center, row nowrap);
+        // max-width: 50%;
+        // // max-height: 200px;
+        max-width: 400px;
+        max-height: 400px;
+        z-index: 1;
+
+        img {
+
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
+        }
+    }
+
+
+
+
+
+}

@@ -1,0 +1,40 @@
+//Flexbox
+@mixin dFlex($justify, $align, $flow) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-flow: $flow;
+}
+
+@mixin dGrid($column, $row, $gap) {
+    display: grid;
+    grid-template-columns: $column;
+    grid-template-rows: $row;
+    gap: $gap;
+}
+
+@mixin btn($bg, $txtColor) {
+    background: $bg;
+    color: $txtColor;
+}
+
+@mixin cardBlur($widt, $mxWidth) {
+    width: $widt;
+    max-width: $mxWidth;
+    // @include dFlex(center, center, column nowrap);
+    color: fff;
+    padding: 50px 35px;
+    margin: 10px;
+    box-shadow: 20px 20px 50px rgba($color: #000, $alpha: 0.5);
+    border-radius: 15px;
+    background: rgba($color: $white, $alpha: 0.2);
+    overflow: hidden;
+    // z-index: 2;
+    border-left: 2px solid rgba($color: $white, $alpha: 0.5);
+    border-bottom: 2px solid rgba($color: $white, $alpha: 0.5);
+    border-top: 1px solid rgba($color: $white, $alpha: 0.1);
+    border-right: 1px solid rgba($color: $white, $alpha: 0.1);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    transition: all 0.5s;
+}

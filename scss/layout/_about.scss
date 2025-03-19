@@ -1,0 +1,107 @@
+.sect-ab{
+    width: 100%;
+    height: 800px;
+    background: url(../img/pexels-rfstudio-3825539.jpg);
+    // z-index: -1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    background-attachment: fixed;
+    @include dFlex(center, center, column nowrap);
+    clip-path: polygon(0 0, 100% 0%, 100% 78%, 66% 87%, 0 100%);
+
+    @include Phone(){
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+
+       
+    }
+
+    
+
+    &::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba($color: $color-ligth, $alpha: 0.5);
+        z-index: -1;
+    }
+
+    
+    
+
+    .carad-ab{
+
+        @include cardBlur(90%, 900px);
+        
+        // width: 90%;
+        // // max-width: 340px;
+        // max-width: 700px;
+        // // @include dFlex(center, center, column nowrap);
+        // color: fff;
+        // padding: 50px 35px;
+        // box-shadow: 20px 20px 50px rgba($color: #000, $alpha: 0.5);
+        // border-radius: 15px;
+        // background: rgba($color: $white, $alpha: 0.2);
+        // overflow: hidden;
+        // // z-index: 2;
+        // border-left: 2px solid rgba($color: $white, $alpha: 0.5);
+        // border-bottom: 2px solid rgba($color: $white, $alpha: 0.5);
+        // border-top: 1px solid rgba($color: $white, $alpha: 0.1);
+        // border-right: 1px solid rgba($color: $white, $alpha: 0.1);
+        // backdrop-filter: blur(3px);
+        // transition: all 0.5s;
+        
+        
+        &:hover{
+            transform: rotateY(30deg) skew(-5deg) ;
+        }
+        
+        img{
+            height: 250px;
+            width: 250px;
+            border-radius: 50%;
+            // padding: 5px;
+            // margin: 30px 30px 30px 0px;
+            float: left;
+            shape-outside: circle();
+        }
+
+        .titCard{
+            // font-family: 'Yesteryear';
+            color: $color-secundario;
+            font-size: 3.5vmin;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-align: center;
+            text-shadow: $color-ligth 1px 0 20px;
+        }
+
+        p{
+            // font-family: 'Popins';
+            padding-top: 20px ;
+            // text-align: center;
+            margin-bottom: 15px;
+            font-size: 20px;
+            font-weight: 700;
+            // font-style: italic;
+            color: $color-primario;
+
+            span{
+                // font-size: 20px;
+                font-style: italic;
+            }
+
+            @include Phone(){
+                font-size: 15px;
+            }
+        }
+
+        @include Phone(){
+            @include dFlex(center, center, column nowrap);
+        }
+
+    }
+}

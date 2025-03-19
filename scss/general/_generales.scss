@@ -1,0 +1,94 @@
+
+//Generales
+body {
+    font-family: 'Poltawski Nowy', sans-serif;
+    // background: #E5C7A7;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar{
+    width: 12px;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: rgba($color: $color-secundario, $alpha: 0.7);
+    border-radius: 50px;
+}
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+header, section {
+    padding: 50px 0;
+}
+
+
+
+h2.title{
+    font-family: 'Yesteryear';
+    font-size: 10vmin;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: $color-secundario;
+    text-shadow: $color-ligth 1px 0 20px;
+    text-align: center;
+}
+
+h1.tprincipal{
+    font-family: 'Abril Fatface';
+    color: $white;
+    font-size: 12vmin;
+    font-weight: 600;
+}
+
+// nav.nav-sticky{
+//     // background: rgba($color: #861D23, $alpha: 1);
+//     background: rgba($color: $white, $alpha: 0.5);
+//     top: 0;
+
+//     @include Tablet(){
+//         background: transparent;
+//     }
+    
+//     // background: #FFF;
+// }
+
+// nav.nav-sticky a{
+//     color: $color-primario;
+//     font-weight: 700;
+// }
+
+// nav.nav-sticky a::before{
+//     background: rgba($color: $color-secundario, $alpha: 0.5);
+// }
+
+
+
+
+// h1{
+//     color: $white;
+//     font-size: 10vmin;
+//     font-weight: 600;
+//     letter-spacing: 2px;
+//     text-transform: uppercase;
+//     text-align: center;
+// }
+
+.bg-primario{
+    background: $color-primario;
+}
+
+.text-center{
+    text-align: center;
+}
+

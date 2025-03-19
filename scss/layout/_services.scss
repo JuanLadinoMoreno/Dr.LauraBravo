@@ -1,0 +1,147 @@
+.sect-serv{
+    // max-width:100%;
+    width: 100%;
+    @include dFlex(center, center, column nowrap);
+
+    .conte{
+        width: 70%;
+        @include dFlex(center, center, row wrap);
+
+        .cont-serv{
+            background: #Fff;
+            min-width: 300px;
+            width: 30%;
+            height: 180px;
+            @include dFlex(center, center, column nowrap);
+            border: 1px solid #e7e7e7;
+            border-radius: 15px;
+            padding:10px 20px;
+            position: relative;
+            overflow: hidden;
+            margin: 10px;
+
+            i{
+                @include dFlex(center, center, row nowrap);
+                position: absolute;
+                width: 35px;
+                height: 35px;
+                top: 15px;
+                right: 15px;
+                border-radius: 50%;
+                border: 3px solid $color-primario;
+                color: $color-primario;
+                background: #FFF;
+                font-size: 20px;
+                opacity: 0;
+
+                @include Tablet(){
+                    opacity: 0.7;
+                }
+
+            }
+
+            &:hover .cont-agen{
+                opacity: 1;
+                // width: 200px;
+                transform: translateX(0px);
+            }
+        
+        
+            img{
+                width: 80px;
+                height: 80px;
+                padding-top: 10px;
+            }
+
+            h3{
+                // font-family: 'Poppins';
+                color: $color-primario;
+                font-size: 2.5vmin;
+                font-weight: 700;
+                letter-spacing: 1px;
+                text-align: center;
+                text-transform: uppercase;
+                font-style: italic;
+                padding: 10px;
+            }
+
+
+            .cont-agen{
+                background: $color-primario;
+                @include dFlex(center, center, column nowrap);
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                transform: translateY(200px);
+                transition: all 0.5s;
+
+                p{
+                    // width: 100%;
+                    // height: 100%;
+                    text-align: center;
+                    font-weight: 600;
+                    font-size: 18px;
+                    letter-spacing: 1px;
+                    padding: 10px 13px;
+                    // background: aqua;
+                    color: #FFF;
+                    border-radius: 15px;
+
+                    
+                }
+
+                a{
+                    text-align: center;
+                    // height: 28px;
+                    // width: 150px;
+                    font-size: 20px;
+                    font-weight: 500;
+                    letter-spacing: 1px;
+                    color: $color-primario;
+                    background: #FFF;
+                    border-radius: 15px;
+                    padding: 10px 15px;
+                    transition: all .5s;
+
+                    &:hover{
+                        border: 1px solid #FFF;
+                        color: #FFF ;
+                        background: $color-primario;
+                    }
+                }
+
+                // p{
+                //     z-index: 1;
+                //     // font-family: 'Poppins';
+                //     //position: absolute;
+                //     // opacity: 0;
+                //     // width: 200px;
+                //     // min-width: 320px;
+                //     font-weight: 400;
+                //     width: 100%;
+                //     // height: 100%;
+                //     //bottom: 0;
+                //     //left: 0;
+                //     padding: 10px;
+                //     font-size: 18px;
+                //     text-align: center;
+                //     @include dFlex(center, center, column nowrap);
+                //     background: $color-primario;
+                //     color: #FFF;
+                //     border-radius: 15px;
+                //     transform: translateY(200px);
+                //     transition: all .5s;
+                    
+                // }
+
+            }
+
+            
+
+        }
+    }
+
+}

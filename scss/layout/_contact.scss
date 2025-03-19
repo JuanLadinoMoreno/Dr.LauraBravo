@@ -1,0 +1,74 @@
+.sect-contact {
+    width: 100%;
+    // height: 900px;
+    @include dFlex(center, center, row wrap);
+    position: relative;
+
+    .map-contact {
+        width: 100%;
+        height: 500px;
+        z-index: -1;
+        // position: relative;
+        // background: brown;
+    }
+
+    .content-contact {
+        // background: blue;
+        
+        @include dFlex(center, center, row wrap);
+        position: absolute;
+        bottom: -40px;
+
+        @include Tablet(){
+            bottom: -80px;
+        }
+
+        @include Phone(){
+            position: static;
+        }
+        
+
+        .item-content {
+            @include cardBlur(250px, 250px);
+            max-height: 200px;
+            // width: 30%;
+            max-width: 250px;
+            @include dFlex(center, center, column nowrap);
+            // gap: 10px;
+            // position: absolute;
+           
+            z-index: 1;
+            // @include dGrid(1, 3fr, 10px);
+            // justify-items: center;
+            // align-content: center;
+            // align-items: center;
+        }
+
+        i{
+            font-size: 40px;
+            // font-size: 4vmin;
+            color: rgba($color: $color-secundario, $alpha: 0.7) ;
+        }
+
+        h4{
+            font-size: 22px;
+            // font-size: 3vmin;
+            font-style: italic;
+            color: $color-primario;
+
+        }
+
+        p{
+            font-size: 20px;
+            // font-size: 2vmin;
+            font-weight: 600;
+            color: $color-primario;
+            text-align: center;
+
+        }
+
+    }
+
+
+
+}

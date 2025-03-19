@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Consulta médica profesional con la Dra. Laura Bravo O., experta en cirugía y parto en Atlixco, Puebla. Agenda tu cita hoy.">
+
+
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+
+    <!-- LeafletMaps -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+        integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+
+    <!-- EFECTOS FADE -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <title>Dra. Laura Bravo O. | Médica, Cirujana y Partera en Atlixco, Puebla</title>
+
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "MedicalClinic",
+          "name": "Dra. Laura Bravo O.",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "42 Oriente #207 ,
+            "addressLocality": "Atlixco",
+            "addressRegion": "Puebla",
+            "addressCountry": "MX"
+          },
+          "telephone": "244-159-3500"
+        }
+        </script>
+        
+
+</head>
+
+<body>
+
+    <a href="#top-nav" id="btop" class="btn-top"><span class="fas fa-angle-up"></span></a>
+
+    <a href="https://wa.me/522441593500" id="bwts" class="btn-wts"> <i class="fab fa-whatsapp"></i></a>
+
+    <div class="top-nave" id="top-nav" data-aos="fade-down" data-aos-duration="400">
+        <div class="adres-content">
+            <i class="fas fa-phone"></i>
+            <p>Contacto: 244 - 159 - 3500</p>
+        </div>
+        <div class="adres-content">
+            <i class="fas fa-clinic-medical"></i>
+            <p>Consultorio Medico: 42 Ote. 207, Atlixco, Puebla</p>
+        </div>
+        <div class="adres-content">
+            <i class="fas fa-clock"></i>
+            <p> Horario: Lunes - Viernes 9:00AM - 2:00PM</p>
+        </div>
+    </div>
+    <!-- NAVBAR -->
+    <nav class="navbar" data-aos="fade-down" data-aos-duration="800">
+
+        <img src="img/logo2.png" alt="" loading="lazy">
+        <ul>
+            <a href="#header"> Inicio</a>
+            <a href="#sect-serv"> Servicios</a>
+            <a href="#sect-ab"> Acerca de mi</a>
+            <a href="#sect-gallery"> Galeria</a>
+            <a href="#sect-contact"> Contacto</a>
+        </ul>
+        <div class="toogle-btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+    </nav>
+
+    <div class="dropdown-menus">
+        <!-- <ul>
+            <li> <a href=""> Inicio</a></li>
+            <li> <a href=""> About</a></li>
+            <li> <a href=""> Services</a></li>
+            <li> <a href=""> Portafolio</a></li>
+            <li> <a href=""> Contacto</a></li>
+        </ul> -->
+        <ul>
+            <a href="#header"> Inicio</a>
+            <a href="#sect-serv"> Servicios</a>
+            <a href="#sect-ab"> Acerca de mi</a>
+            <a href="#sect-gallery"> Galeria</a>
+            <a href="#sect-contact"> Contacto</a>
+        </ul>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <div class="bg-color"></div>
+        <div class="header-content">
+            <h1 data-aos="fade-right" data-aos-duration="1200" data-aos-easing="ease-in-sine">
+                <span data-aos="fade-down" data-aos-duration="1500" > Doctora </span>
+                Laura <br> Bravo O.
+                <!-- <br>
+                    <span> Brvo O.</span> -->
+            </h1>
+            <!-- <h1 data-aos="fade-right" data-aos-duration="800" data-aos-easing="ease-in-sine">Bravo O.</h1> -->
+            <p data-aos="fade-up" data-aos-duration="400"> <span class="elementTyped"> </span></p>
+        </div>
+        <div class="img-header" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="600">
+            <img src="img/img-head.png" alt="" loading="lazy">
+        </div>
+
+    </header>
+
+
+
+    <!-- SERVICIOS -->
+    <section class="sect-serv" id="sect-serv">
+        <h2 class="title" data-aos="fade-left" data-aos-duration="1500">Servicios</h2>
+        <div class="conte">
+            <div class="cont-serv" data-aos="flip-left" data-aos-duration="1200" data-aos-easing="ease-out-cubic">
+                <i class="fas fa-angle-up"></i>
+                <img src="img/icons/family.png" alt="" loading="lazy">
+                <h3>Consulta medicina general</h3>
+
+                <div class="cont-agen">
+                    <p>Atención a toda la familia. Adultos mayores, adultos y niños mayores de 4 meses.
+                    </p>
+                    <a href="https://wa.me/522441593500" target="blank" class="icon-redes"> Agendar cita
+                        <!-- <i class="fa-brands fa-whatsapp"></i> -->
+                    </a>
+
+                </div>
+
+
+            </div>
+
+            <div class="cont-serv" data-aos="flip-left" data-aos-duration="1400" data-aos-easing="ease-out-cubic">
+                <i class="fas fa-angle-up"></i>
+                <img src="img/icons/guide-book.png" alt="" loading="lazy">
+                <h3>Control prenatal</h3>
+                <div class="cont-agen">
+                    <p>
+                        Seguimiento durante el embarazo.
+                    </p>
+                    <a href="https://wa.me/522441593500" target="blank" class="icon-redes"> Agendar cita
+                        <!-- <i class="fa-brands fa-whatsapp"></i> -->
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="cont-serv" data-aos="flip-left" data-aos-duration="1600" data-aos-easing="ease-out-cubic">
+                <i class="fas fa-angle-up"></i>
+                <img src="img/icons/born.png" alt="" loading="lazy">
+                <h3>Control de niño sano</h3>
+                <div class="cont-agen">
+                    <p>
+                        Seguimiento del desarrollo y crecimiento de los niños desde los 0 - 5 años.
+                    </p>
+                    <a href="https://wa.me/522441593500" target="blank" class="icon-redes"> Agendar cita
+                        <!-- <i class="fa-brands fa-whatsapp"></i> -->
+                    </a>
+                </div>
+
+
+            </div>
+
+            <div class="cont-serv" data-aos="flip-left" data-aos-duration="1800" data-aos-easing="ease-out-cubic">
+                <i class="fas fa-angle-up"></i>
+                <img src="img/icons/motherhood.png" alt="" loading="lazy">
+                <h3>Planificación familiar</h3>
+                <div class="cont-agen">
+                    <p>
+                        Asesoría y uso de metodos de planificación familiar
+                    </p>
+                    <a href="https://wa.me/522441593500" target="blank" class="icon-redes"> Agendar cita
+                        <!-- <i class="fa-brands fa-whatsapp"></i> -->
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="cont-serv" data-aos="flip-left" data-aos-duration="2000" data-aos-easing="ease-out-cubic">
+                <i class="fas fa-angle-up"></i>
+                <img src="img/icons/wounded.png" alt="" loading="lazy">
+                <h3>Manejo de heridas</h3>
+                <div class="cont-agen">
+                    <p>
+                        Curación de herida, suturas, manejo de pie diabético, úlceras.
+                    </p>
+                    <a href="https://wa.me/522441593500" target="blank" class="icon-redes"> Agendar cita
+                        <!-- <i class="fa-brands fa-whatsapp"></i> -->
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="cont-serv" data-aos="flip-left" data-aos-duration="2200" data-aos-easing="ease-out-cubic">
+                <i class="fas fa-angle-up"></i>
+                <img src="img/icons/diabetes-test.png" alt="" loading="lazy">
+                <h3>Control de enfermedades crónicas</h3>
+                <div class="cont-agen">
+                    <p>
+                        Seguimiento y manejo de pacientes con diabetes, hipertensión, dislipidemia.
+                    </p>
+                    <a href="https://wa.me/522441593500" target="blank" class="icon-redes"> Agendar cita
+                        <!-- <i class="fa-brands fa-whatsapp"></i> -->
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="cont-serv" data-aos="flip-left" data-aos-duration="2400" data-aos-easing="ease-out-cubic">
+                <i class="fas fa-angle-up"></i>
+                <img src="img/icons/infusion.png" alt="" loading="lazy">
+                <h3>Administración de medicamentos</h3>
+                <div class="cont-agen">
+                    <p>
+                        Asesoría y administración de medicamentos.
+                    </p>
+                    <a href="https://wa.me/522441593500" target="blank" class="icon-redes"> Agendar cita
+                        <!-- <i class="fa-brands fa-whatsapp"></i> -->
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="cont-serv" data-aos="flip-left" data-aos-duration="2600" data-aos-easing="ease-out-cubic">
+                <i class="fas fa-angle-up"></i>
+                <img src="img/icons/prescription.png" alt="" loading="lazy">
+                <h3>Certificados médicos</h3>
+                <div class="cont-agen">
+                    <p>
+                        Documento legal que avala el estado de salud del paciente. crado para los fines que convenga;
+                        escolar, laboral, prenupcial, para trámite de pasaporte, etc.
+                    </p>
+                    <a href="https://wa.me/522441593500" target="blank" class="icon-redes"> Agendar cita
+                        <!-- <i class="fa-brands fa-whatsapp"></i> -->
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ABOUT -->
+    <section class="sect-ab" id="sect-ab">
+        <h2 class="title" data-aos="fade-left" data-aos-duration="1500">Acerca de mi</h2>
+        <div class="carad-ab" data-aos="zoom-in-down" data-aos-duration="2000">
+            <img src="img/img-head.png" alt="" loading="lazy">
+            <h3 class="titCard">Dra. Laura Bravo Ocampo</h3>
+            <p>
+                <span> "Para mi es de primordial importancia establecer un plan de tratamiento personalizado y
+                    eficaz para tu salud."</span> <br> <br>
+                Me apasionan los animales principalmente gatos y perros. disfruto de caminar por las mañanas al aire
+                libre, me gusta mucho la gastronomia mexicana. En mis ratos libres gozo de un buen café y lectura de
+                libros.
+            </p>
+        </div>
+    </section>
+
+    <!-- GALERIA -->
+    <section class="sect-gallery" id="sect-gallery">
+        <h2 class="title" data-aos="fade-left" data-aos-duration="1500">Galeria</h2>
+
+        <!-- <div class="row">
+            <div class="column">
+                <img src="img/img/bg1.jpg" alt="">
+                <img src="img/img/bg2.jpg" alt="">
+                <img src="img/img/bg3.jpg" alt="">
+            </div>
+
+            <div class="column">
+                <img src="img/img/bg4.jpg" alt="">
+                <img src="img/img/bg5.jpg" alt="">
+                <img src="img/img/bg6.jpg" alt="">
+            </div>
+
+            <div class="column">
+                <img src="img/img/bg1.jpg" alt="">
+                <img src="img/img/bg2.jpg" alt="">
+                <img src="img/img/bg3.jpg" alt="">
+            </div>
+        </div> -->
+
+
+        <div class="grid-container">
+            <div class="itemGa r-span2" data-aos="fade-up-left" data-aos-duration="1200"
+                data-aos-easing="ease-out-cubic" data-aos-offset="100">
+                <img src="img/gallery/001abg01.jpg" alt="" loading="lazy">
+            </div>
+
+            <div class="itemGa c-span2" data-aos="fade-down-left" data-aos-duration="1200"
+                data-aos-easing="ease-out-cubic" data-aos-offset="100">
+                <img src="img/gallery/001abg03.jpg" alt="" loading="lazy">
+            </div>
+
+            <div class="itemGa r-span2" data-aos="fade-up-right" data-aos-duration="1200"
+                data-aos-easing="ease-out-cubic" data-aos-offset="100">
+                <img src="img/gallery/1cons4.jpg" alt="" loading="lazy">
+            </div>
+
+            <div class="itemGa" data-aos="fade-down-left" data-aos-duration="1200" data-aos-easing="ease-out-cubic"
+                data-aos-offset="100">
+                <img src="img/gallery/1cons1.jpg" alt="" loading="lazy">
+            </div>
+
+            <div class="itemGa" data-aos="fade-up-left" data-aos-duration="1200" data-aos-easing="ease-out-cubic"
+                data-aos-offset="100">
+                <img src="img/gallery/1cons2.jpg" alt="" loading="lazy">
+            </div>
+
+            <div class="itemGa c-span2" data-aos="fade-down-left" data-aos-duration="1200"
+                data-aos-easing="ease-out-cubic" data-aos-offset="100">
+                <img src="img/gallery/abg5.jpg" alt="" loading="lazy">
+            </div>
+
+            <div class="itemGa c-span2" data-aos="fade-up-right" data-aos-duration="1200"
+                data-aos-easing="ease-out-cubic" data-aos-offset="100">
+                <img src="img/gallery/001abg02.jpg" alt="" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="sect-contact" id="sect-contact">
+        <h2 class="title">Contacto</h2>
+        <div class="map-contact" id="mapaLea"></div>
+        <div class="content-contact" data-aos="flip-down" data-aos-duration="1200" data-aos-delay="0">
+            <!-- <div class="items"> </div> -->
+
+            <div class="item-content">
+                <i class="fas fa-phone"></i>
+                <!-- <i class="fas fa-phone"></i> -->
+                <h4>Telefono</h4>
+                <p> 244 - 159 - 3500</p>
+            </div>
+            <div class="item-content">
+                <i class="fas fa-clinic-medical"></i>
+                <h4>Consutorio</h4>
+                <p> 42 Ote. 207,  Atlixco, Puebla</p>
+            </div>
+            <div class="item-content">
+                <i class="fas fa-clock"></i>
+                <h4>Horario</h4>
+                <p>Lunes - Viernes <br> 9:00AM - 2:00PM</p>
+            </div>
+
+
+    </section>
+
+    <br>
+    <br>
+
+    <footer>
+        <div class="cont-redes">
+            <a href="https://wa.me/522441593500" target="blank" class="icon-redes"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100086187972571" target="blank" class="icon-redes"><i class="fab fa-facebook"></i></a>
+            <a href="" target="blank" class="icon-redes"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="cont-enla">
+            <!-- <img src="img/logo2.png" alt=""> -->
+            <a href="#header"> Inicio</a>
+            <a href="#sect-serv"> Services</a>
+            <a href="#sect-ab"> About</a>
+            <a href="#sect-gallery"> Portafolio</a>
+            <a href="#sect-contact"> Contacto</a>
+        </div>
+        <p>© 2023. All Rights Reserved</p>
+
+    </footer>
+
+
+
+
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+
+    <script>
+
+        let typed = new Typed('.elementTyped', {
+            strings: [' Médica, cirujana y partera...', ' Egresada de la Buap...'],
+            typeSpeed: 150,
+            backSpeed: 100,
+            backDelay: 200,
+            loop: true,
+            // fadeOut: true,
+            // fadeOutClass: 'typed-fade-out',
+            // fadeOutDelay: 100,
+
+            // showCursor: true,
+            // cursorChar: '.',
+            // autoInsertCss: true,
+
+        })
+
+        // SCROLL ABAJO
+        window.addEventListener("scroll", function () {
+            const nav = document.querySelector('nav');
+            nav.classList.toggle('nav-sticky', window.scrollY > 0)
+
+            const top = document.getElementById('btop');
+            top.classList.toggle('top-sticky', window.scrollY > 0)
+
+            const wts = document.getElementById('bwts');
+            wts.classList.toggle('wts-sticky', window.scrollY > 0)
+        })
+
+    </script>
+
+
+    <script>
+        //MENU MOVILES
+        const btntogg = document.querySelector('.toogle-btn');
+        const btntoggi = document.querySelector('.toogle-btn i');
+        const dropmen = document.querySelector('.dropdown-menus');
+
+        btntogg.onclick = function () {
+            dropmen.classList.toggle('opens');
+            const isOpen = dropmen.classList.contains('opens')
+
+            btntoggi.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+        }
+    </script>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- LeafletMaps -->
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+        integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+    <script>
+        let map = L.map('mapaLea').setView([18.92785633088253, -98.42804648244724], 17);
+
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            // attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        L.marker([18.92785633088253, -98.42804648244724]).addTo(map)
+            .bindPopup('Consultorio "Doctora Laura"')
+            .openPopup();
+
+    </script>
+
+    <!-- EFECTOS FADE -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

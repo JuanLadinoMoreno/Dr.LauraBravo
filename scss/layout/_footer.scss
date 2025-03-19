@@ -1,0 +1,63 @@
+footer {
+    @include dFlex(space-around, center, column wrap);
+    background: $color-primario;
+    width: 100%;
+    // height: 100px;
+    margin-top: 40px;
+
+    .cont-redes {
+        @include dFlex(space-around, center, row wrap);
+        width: 50%;
+        padding: 15px 0;
+
+        .icon-redes {
+            @include dFlex(center, center, row wrap);
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            border: 1px solid #FFF;
+            color: #FFF;
+            font-size: 30px;
+            transition: all 0.8s;
+
+            &:hover {
+                transform: rotateY(360deg)
+            }
+        }
+
+
+
+
+
+        // i{
+        //     @include dFlex(center, center, row wrap);
+        //     background: chocolate;
+        //     width: 60px;
+        //     height: 60px;
+        //     font-size: 20px;
+        // }
+
+    }
+
+    .cont-enla {
+        @include dFlex(space-around, center, row wrap);
+        gap: 15px;
+        width: 60%;
+        padding: 15px 0;
+        // margin: 0 10px;
+
+        a {
+            color: #FFF;
+            font-size: 20px;
+        }
+    }
+
+    p{
+        text-align: center;
+        font-size: 15px;
+        color: #FFF;
+        padding: 10px 0;
+    }
+
+
+}
